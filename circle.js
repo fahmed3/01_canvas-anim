@@ -49,13 +49,12 @@ var circle = function(){
 var dvd = function(){
     ctx.clearRect(0,0,c.width,c.height);
     window.cancelAnimationFrame(requestID);
-    var radius = 25;
-    var x = 0;
-    var y = 0;
-    var dX = 1;
-    var dY = 1;
     var imgW = 100;
     var imgH = 75;
+    var x = Math.random()*(c.width-imgW);
+    var y = Math.random()*(c.height-imgH);
+    var dX = 5;
+    var dY = 5;
     
     var move = function() {	
 	var img = new Image();
